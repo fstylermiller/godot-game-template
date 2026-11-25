@@ -1,0 +1,25 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    init: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - godot-cache:/home/dev/.local/share/godot
+
+  # Blender MCP server, started over stdio by .vscode/mcp.json; Blender itself runs on the host.
+  blender-mcp:
+    build:
+      context: docker/blender-mcp
+    platform: linux/amd64
+    init: true
+    stdin_open: true
+    profiles: [blender]
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
+volumes:
+  godot-cache:

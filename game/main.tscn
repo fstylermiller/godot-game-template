@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://world/atmosphere/atmosphere.tscn" id="1_atmosphere"]
+[ext_resource type="PackedScene" path="res://world/lighting/sun.tscn" id="2_sun"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Atmosphere" parent="." instance=ExtResource("1_atmosphere")]
+
+[node name="Sun" parent="." instance=ExtResource("2_sun")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 3, 6)
+rotation_degrees = Vector3(-20, 0, 0)
+current = true

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ColorRules" format=3 uid="uid://csl8ds45x7wc5"]
+
+[ext_resource type="Script" uid="uid://ds1xqkn4cqen3" path="res://art/color_rules.gd" id="1_rules"]
+[resource]
+script = ExtResource("1_rules")
+min_luminosity = 0.0
+max_luminosity = 1.0
+max_saturation = 1.0

@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://world/atmosphere/atmosphere.gd" id="1_atmosphere"]
+[ext_resource type="Resource" path="res://world/sky/sky.tres" id="2_sky"]
+[ext_resource type="Resource" path="res://world/fog/fog.tres" id="3_fog"]
+[ext_resource type="Resource" path="res://world/post/post_process.tres" id="4_post"]
+
+[node name="Atmosphere" type="WorldEnvironment"]
+script = ExtResource("1_atmosphere")
+sky = ExtResource("2_sky")
+fog = ExtResource("3_fog")
+post_process = ExtResource("4_post")

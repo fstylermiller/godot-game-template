@@ -1,0 +1,15 @@
+# Portable Godot editor (downloaded and verified by scripts/editor.ps1)
+.tools/
+
+# Export output and dev-run user data
+builds/
+
+# Godot import cache and editor state
+game/.godot/
+*.import.tmp
+
+# Python tooling caches (gdtoolkit)
+__pycache__/
+.venv/
+
+.env

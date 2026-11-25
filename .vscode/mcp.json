@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "blender": {
+      "type": "stdio",
+      "command": "docker",
+      "args": ["compose", "--profile", "blender", "run", "--rm", "-T", "blender-mcp"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
